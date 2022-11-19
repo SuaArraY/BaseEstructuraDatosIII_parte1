@@ -30,10 +30,10 @@ USE `world`;
 -- Table structure for table `city`
 --
 
-DROP TABLE IF EXISTS `ciudad`;
+DROP TABLE IF EXISTS `city`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `ciudad` (
+CREATE TABLE `city` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `Name` char(35) NOT NULL DEFAULT '',
   `CountryCode` char(3) NOT NULL DEFAULT '',
@@ -4136,10 +4136,10 @@ commit;
 -- Table structure for table `country`
 --
 
-DROP TABLE IF EXISTS `pais`;
+DROP TABLE IF EXISTS `country`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `pais` (
+CREATE TABLE `country` (
   `Code` char(3) NOT NULL DEFAULT '',
   `Name` char(52) NOT NULL DEFAULT '',
   `Continent` enum('Asia','Europe','North America','Africa','Oceania','Antarctica','South America') NOT NULL DEFAULT 'Asia',
@@ -4410,10 +4410,10 @@ commit;
 -- Table structure for table `countrylanguage`
 --
 
-DROP TABLE IF EXISTS `lenguaje_pais`;
+DROP TABLE IF EXISTS `countrylanguage`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `lenguaje_pais` (
+CREATE TABLE `countrylanguage` (
   `CountryCode` char(3) NOT NULL DEFAULT '',
   `Language` char(30) NOT NULL DEFAULT '',
   `IsOfficial` enum('T','F') NOT NULL DEFAULT 'F',
